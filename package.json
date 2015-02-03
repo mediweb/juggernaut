@@ -11,9 +11,10 @@
   { "type" : "git"
   , "url" : "http://github.com/maccman/juggernaut.git"
   }
-, "engine" : [ "node >=0.1.102" ]
+, "engine" : { "node" : "0.8.16" }
 , "main" : "./index"
 , "bin" : { "juggernaut" : "./server.js" }
+, "scripts" : { "start" : "./server.js $PORT" }
 , "dependencies" :
   { "socket.io" : "=0.8.7"
   , "redis" : "~0.7.1"
