@@ -34,7 +34,7 @@
     var jug = new Juggernaut({
       secure: ('https:' == document.location.protocol),
       host: document.location.hostname,
-      port: document.location.port || 80
+      port: document.location.port || (secure ? 443 : 80)
     });
     
     jug.on("connect", function(){ log("Connected") });
