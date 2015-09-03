@@ -14,7 +14,7 @@
 , "engine" : { "node" : "0.8.16" }
 , "main" : "./index"
 , "bin" : { "juggernaut" : "./server.js" }
-, "scripts" : { "start" : "./server.js $PORT" }
+, "scripts" : { "start" : "./server.js 6000" }
 , "dependencies" :
   { "socket.io" : "=0.8.7"
   , "redis" : "~0.7.1"

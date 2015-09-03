@@ -30,9 +30,10 @@
     var log = function(data){
       logElement.value += (data + "\n");
     };
-    
+
+    var secure = ('https:' == document.location.protocol);
     var jug = new Juggernaut({
-      secure: ('https:' == document.location.protocol),
+      secure: secure,
       host: document.location.hostname,
       port: document.location.port || (secure ? 443 : 80)
     });
